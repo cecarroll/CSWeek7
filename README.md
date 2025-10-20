@@ -18,6 +18,7 @@ The two object classes we are going to need is for Addresses and Dates
 makefile woes: 
 So, each main.o: object will be dependent on its own cpp, but also, each class we make that references it. So main is dependent on student, which is dependent on date and address. We will have to compile all previous objects which will require that we compile all previous cpp's. The dependency part a la "horse.o: horse.cpp race.o xyz.o" is separate from the command that it does underneath: command command compile the cpp "horse.cpp" for horse.o 
 
+'''
 Algo cpp's: 
 Student Class
 string firstName
@@ -93,4 +94,4 @@ String Student::getlastName()
     return lastName
 
 
-
+'''
